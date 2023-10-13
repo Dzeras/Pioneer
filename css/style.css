@@ -46,6 +46,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
+    column-gap: 50px;
 }
 
 .navigation-list {
@@ -82,11 +83,7 @@ body {
 
 /* Header Block */
 .header {
-    /* background-image: url("/Pioneer/image/IMG_2735.JPG");
-    background-repeat: no-repeat;
-    width: 100%;
-    position: absolute;
-    max-width: 560px; */
+    min-height: 895px;
 }
 
 .header_row {
@@ -184,7 +181,6 @@ body {
 
 }
 
-
 .pilates_card {
     width: 260px;
     height: 400px;
@@ -243,12 +239,10 @@ body {
 /* Team Block */
 .slider {
     position: relative;
-    width: 260px;
     height: 400px;
-    margin: 50px auto 0;
     user-select: none;
     touch-action: pan-y;
-   
+    transition: left .25s;
 }
 
 .team>.container.grab {
@@ -261,7 +255,7 @@ body {
 
 .team_row {
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .team_card {
@@ -272,6 +266,7 @@ body {
     border-radius: 20px;
     background: #fff;
     flex-shrink: 0;
+    margin-right: 25px;
 }
 
 .team_photo>img{
@@ -336,6 +331,7 @@ body {
 
 .timetable_list {
     display: flex;
+    justify-content: space-between;
     width: 900px;
     height: 370px;
     border-radius: 20px;
@@ -378,9 +374,59 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-left: 25px;
     font-size: 22px;
     color: #F7EEEE;
     line-height: normal;
     padding-bottom: 10px;
+    padding-right: 25px;
+}
+
+.slogan {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.slogan>span {
+    width: 520px;
+    height: 54px;
+    flex-shrink: 0;
+    color: #F7EEEE;
+    text-shadow: 0px 2px 10px #4200FF;
+    font-family: Galada;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 10px;
+}
+
+/* Cost Block */
+
+.cost_container {
+    display: flex;
+    width: 900px;
+    height: 330px;
+    left: 31px;
+    top: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+.cost_title {
+    display: flex;
+    width: 100%;
+}
+
+.cost_1 {
+    display: flex;
+}
+
+.cost_2 {
+    display: flex;
+}
+
+.cost_3 {
+    display: flex;
 }
