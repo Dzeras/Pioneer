@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Red+Hat+Display:ital,wght@0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/IMG_0447-fotor-bg-remover-2023100910588.png">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
 </head>
 <body>
     <nav class="nav">
@@ -16,15 +18,15 @@
                 <div class="logo">
                     <img src="image/IMG_0447-fotor-bg-remover-2023100910588.png">
                 </div>
-                <div class="navigation-list">
-                    <ul>
+                <!-- <div class="navigation-list"> -->
+                    <ul class="main-menu">
                         <li><a href="#types">Направления</a></li>
                         <li><a href="#team">Команда</a></li>
                         <li><a href="#timetable">Расписание</a></li>
                         <li><a href="#cost">Стоимость</a></li>
                         <li><a href="#contacts">Контакты</a></li>
                     </ul>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </nav>
@@ -34,17 +36,17 @@
                 <div class="header_text">
                     <h2 class="header_title">Студия идеального тела</h2>
                     <p>"Успех не окончателен, неудача не смертельна, мужество продолжать - вот что имеет значение", У.Черчиль</p>
-                    <button class="sign_button">Записаться</button>
+                    <button class="sign_button" href="#form">Записаться</button>
                 </div> 
                 
                 <div class="header_image">
-                    <img src="image/IMG_2735.JPG">
+                    <img src="image/IMG_2808-PhotoRoom.png-PhotoRoom.png">
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="types">
+    <section class="types" id="types">
         <div class="container">
             <div class="title">
                 <p>Направления</p>
@@ -61,7 +63,7 @@
         </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
             <div class="title">
                 <p>Наша команда</p>
@@ -153,63 +155,138 @@
             </div>
             <div class="arrows">
                 <a class="prev" onclick="minusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</button>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
     </section>
 
-    <section class="timetable">
+    <section class="timetable" id="timetable">
         <div class="container">
             <div class="title">Расписание</div>
-            <div class="timetable_list">
-                <div class="timetable_list_left">
-                    <span class="day">Пн-Ср-Пт</span>
-                    <span class="time">9:00-10:00  Трайбл фьюжн/Лана</span>
-                    <span class="time">13:00-14:00  Фитнес/Анна</span>
-                    <span class="time">16:30-17:30  Пилатес/Альбина</span>
-                    <span class="time">17:30-18:30  Фитнес/Зарина</span>
-                    <span class="time">18:30-19:30  Фитнес/Анна</span>
-                    <span class="time">20:40-21:40  Стретчинг/Зарина</span>
+            <div class="timetable_container">
+                <div class="slogan">
+                    <span>GOOD VIBES ONLY</span>
                 </div>
-                <div class="timetable_list_right">
-                    <span class="day">Вт-Чт-Сб</span>
-                    <span class="time">10:00-11:00  Пилатес/Альбина</span>
-                    <span class="time">13:00-14:00  Heels/Марина</span>
-                    <span class="time">16:00-17:00  Силовая/Лера</span>
-                    <span class="time">17:30-18:30  Силовая/Элла</span>
-                    <span class="time">18:30-19:30  Функционал/Карина</span>
-                    <span class="time">19:30-20:30  Бокс/Лела</span>
-                    <span class="time">20:40-21:40  Пилатес/Альбина</span>
+                <div class="timetable_list">
+                    <div class="timetable_list_left">
+                        <span class="day">Пн-Ср-Пт</span>
+                        <span class="time">9:00-10:00  Трайбл фьюжн/Лана</span>
+                        <span class="time">13:00-14:00  Фитнес/Анна</span>
+                        <span class="time">16:30-17:30  Пилатес/Альбина</span>
+                        <span class="time">17:30-18:30  Фитнес/Зарина</span>
+                        <span class="time">18:30-19:30  Фитнес/Анна</span>
+                        <span class="time">20:40-21:40  Стретчинг/Зарина</span>
+                    </div>
+                    <div class="timetable_list_right">
+                        <span class="day">Вт-Чт-Сб</span>
+                        <span class="time">10:00-11:00  Пилатес/Альбина</span>
+                        <span class="time">13:00-14:00  Heels/Марина</span>
+                        <span class="time">16:00-17:00  Силовая/Лера</span>
+                        <span class="time">17:30-18:30  Силовая/Элла</span>
+                        <span class="time">18:30-19:30  Функционал/Карина</span>
+                        <span class="time">19:30-20:30  Бокс/Лела</span>
+                        <span class="time">20:40-21:40  Пилатес/Альбина</span>
+                    </div>
                 </div>
-            </div>
-            <div class="slogan">
-                <span>GOOD VIBES ONLY</span>
+                
             </div>
         </div>
     </section>
 
-    <section class="cost">
+    <section class="cost" id="cost form">
         <div class="container">
             <div class="title">Стоимость</div>
-            <div class="cost_container">
-                <div class="cost_title">Абонемент на месяц</div>
-                <div class="cost_1">
-                    <span class="cost_head">С 9:00 по 16:00</span>
-                    <span class="cost_size">2300 р</span>
+                <div class="main_container">
+                    <div class="cost_container">
+                        <p class="cost_title">Абонемент на месяц</p>
+                        <div class="cost_1">
+                            <span class="cost_head">С 9:00 по 16:00</span>
+                            <span class="cost_size">2300 р</span>
+                        </div>
+                        <div class="cost_2">
+                            <span class="cost_head">С 16:00 по 20:40</span>
+                            <span class="cost_size">2500 р</span>
+                        </div>
+                        <div class="cost_3">
+                            <span class="cost_head">Разовое посещение</span>
+                            <span class="cost_size">350 р</span>
+                        </div>
+                    </div>
+                <div class="form_block">
+                    <form id="tg" class="form">
+                        <div class="form_title">Присоединяйтесь к нам, чтобы сделать шаг к телу своей мечты</div>
+                        <div class="form_item">
+                            <!-- <label class="form_label">Имя</label> -->
+                            <input type="text" id="name" class="form_input" placeholder="Имя">
+                        </div>
+                        <div class="form_item">
+                            <!-- <label class="form_label">Имя</label> -->
+                            <input type="text" id="type" class="form_input" placeholder="Направление">
+                        </div>
+                        <div class="form_item ">
+                            <!-- <label class="form_label">Введите номер телефона</label> -->
+                            <input type="text" id="phone" class="form_input" placeholder="Введите номер телефона">
+                        </div>
+                        <button type="button"  id="tg_btn" class="btn">Записаться</button>
+                        <div class="alert primary" id="alert" style="display: none;">
+                            <!-- Ваша заявка отправлена! С вами свяжутся! -->
+                            <!-- <span class="close" onclick="parentElement.style.display='none'">x</span> -->
+                        </div>
+                    </form>
                 </div>
-                <div class="cost_2">
-                    <span class="cost_head">С 16:00 по 20:40</span>
-                    <span class="cost_size">2500 р</span>
-                </div>
-                <div class="cost_3">
-                    <span class="cost_head">Разовое посещение</span>
-                    <span class="cost_size">350 р</span>
+            </div>
+                
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contact_container">
+                <div class="contact_title">PIONEER</div>
+                <div class="contact">
+                    <div class="address">
+                        <span class="con_title">Адрес</span>
+                        <p>г.Цхинвал, ул.Советская, 2а</p>
+                    </div>
+                    <div class="schedule">
+                        <span class="con_title">График работы</span>
+                        <p>Пн-сб 9:00-21:40</p>
+                    </div>
+                    <div class="contacts_block">
+                        <span class="con_title">Контакты</span>
+                        <p>+7-929-808-99-57</p>
+                        <div class="social">
+                            <img src="image/3225191_app_instagram_logo_media_popular_icon.png" alt="Instagram icon">
+                            <a class="link" href="https://www.instagram.com/pioneer_fitness_tsh" target="_blank">pioneer_fitness_tsh</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="footer"></div>
 
+    <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#types">Направления</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#timetable">Расписание</a></li>
+                <li><a href="#cost">Стоимость</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+
+            <!-- <p>
+                &copy;
+                <span>2023</span>
+                <span>Pioneer Fitness</span></p> -->
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
