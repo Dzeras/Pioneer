@@ -1,0 +1,72 @@
+@media screen and (max-width: 768px) {
+     .header-row {
+        display: grid;
+    }
+    
+    .header__image{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .benefits__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
+    }
+
+    .container {
+        overflow: hidden;
+        display: flex;
+    }
+
+    .types__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        margin-left: 5px;
+        gap: 30px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+
+        .card__title {
+            padding-left: 30px;
+        }
+    }
+
+    .timetable__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .slogan {
+        display: flex;
+        justify-content: center;
+        padding-top: 3px;
+    }
+
+    .wrapper {
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: $tablet) {
+    .container {
+        display: block;
+    }
+
+    .header {
+        min-height: unset;
+        row-gap: 50px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav-btn {
+        display: block;
+    }
+}

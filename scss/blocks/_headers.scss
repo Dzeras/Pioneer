@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 840px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+}
+.logo img{
+    width: 120px;
+    height: 100px;
+}
+
+
+.header__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 725px;
+
+    
+}
+
+.header__nav-btn {
+    display: none;
+
+    
+}
+
+.header__text {
+    flex: 1;
+    color: $color-accent;
+    font-size: 20px;
+    line-height: 1.46;
+    text-align: center;
+    font-family: $font-accent;
+}
+
+.header__image img{
+    position: relative;
+    height: 900px;
+    width: 100%;
+    margin-top: -180px;
+    z-index: -1;
+
+}
+

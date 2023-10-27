@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+
+    .menu {
+        display: flex;
+        list-style: none;
+        gap: 3rem;
+        
+    }
+}
+

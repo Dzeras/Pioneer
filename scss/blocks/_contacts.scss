@@ -1,0 +1,27 @@
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    border-radius: 20px;
+    line-height: normal;
+    min-height: 200px;
+    background-color: $block-bg;
+    color: $text-color-accent;
+    // font-family: $font-accent;
+    padding: 15px;
+    gap: 15px;
+
+    .contact__title {
+        color: $color-accent;
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+
+    .contact{
+        flex: 1;
+        width: 70%;
+        align-self: center;
+    }
+}
+

@@ -1,0 +1,44 @@
+.cost {
+    padding: 100px 0;
+    padding-bottom: 30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+    // position: relative;
+    
+}
+
+.cost__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 600px;
+    height: 250px;
+    background-color: $block-bg;
+    border-radius: 20px;
+    color: #F7EEEE;
+    font-size: 16px;
+}
+
+.cost__title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+    font-family: $font-accent;
+}
+
+.cost__3 {
+    padding-top: 75px;
+}
+
+.cost__head {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.cost__size {
+    padding-left: 50px;
+}

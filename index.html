@@ -3,275 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Pioneer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Red+Hat+Display:ital,wght@0,700;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="icon" href="image/IMG_0447-fotor-bg-remover-2023100910588.png">
+    <link rel="stylesheet" href="https://libs.cdnjs.net/font-awesome/6.4.2/css/all.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-            <div class="nav_row">
-                <div class="logo">
-                    <img src="image/IMG_0447-fotor-bg-remover-2023100910588.png">
-                </div>
-                <div class="main-menu">
-                    <ul class="m-menu">
-                        <li><a href="#types">Направления</a></li>
-                        <li><a href="#team">Команда</a></li>
-                        <li><a href="#timetable">Расписание</a></li>
-                        <li><a href="#cost">Стоимость</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-row">
+                    <a class="logo" href="#">
+                        <img src="image/IMG_0447-fotor-bg-remover-2023100910588.png">
+                    </a>
+                    <div class="header__nav">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li><a href="#types">Направления</a></li>
+                                <li><a href="#team">Команда</a></li>
+                                <li><a href="#timetable">Расписание</a></li>
+                                <li><a href="#cost">Стоимость</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                                <li><a href="https://www.instagram.com/pioneer_fitness_tsh" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #b417d3;"></i></i></a></li>
+                                <li><a href="#contacts"><i class="fa-solid fa-location-dot" style="color: #b417d3;"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header__nav-btn">
+                        <button class="nav-icon-btn">
+                            <div class="nav-icon"></div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-    <header class="header">
-        <div class="container">
-            <div class="header_row">
-                <div class="header_text">
-                    <h2 class="header_title">Студия идеального тела</h2>
-                    <p>"Успех не окончателен, неудача не смертельна, мужество продолжать - вот что имеет значение", У.Черчиль</p>
-                    <button class="sign_button" href="#form">Записаться</button>
-                </div> 
-                
-                <div class="header_image">
-                    <img src="image/IMG_2808-PhotoRoom.png-PhotoRoom.png">
+        
+        <div class="header__title">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header__text">
+                        <h2 class="header__title">Студия идеального тела</h2>
+                        <p>"Успех не окончателен, неудача не смертельна, мужество продолжать - вот что имеет значение", У.Черчиль</p>
+                        <!-- <button class="sign_button" href="#form">Записаться</button> -->
+                    </div> 
+                    
+                    <div class="header__image">
+                        <img src="image/IMG_2808-PhotoRoom.png-PhotoRoom.png">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="types" id="types">
-        <div class="container">
-            <div class="title">
-                <p>Направления</p>
+    <main>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__row">
+                    <div class="benefits__item">
+                        <img src="./image/_ (10).jpeg" class="benefits__item-img">
+                        <p class="benefits__item-text">Все необходимое оборудование</p>
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./image/Домашние тренировки, чтобы не изолироваться летом от пляжа.jpeg" class="benefits__item-img">
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./image/20 Minuten Lifestyle_ Online-Magazin für Genuss, Reisen & Fashion.jpeg" class="benefits__item-img">
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./image/_ (11).jpeg" class="benefits__item-img">
+                    </div>
+                </div>
             </div>
-            <div class="types_row">
-               
-                <div class="fitness_card"><span>Фитнес</span></div>
-                <div class="pilates_card"><span>Пилатес</span></div>
-                <div class="traible_card"><span>Трайбл фьюжн</span></div>
-                <div class="heels_card"><span>Heels</span></div>
-                <div class="yoga_card"><span>Йога</span></div>
-                <div class="box_card"><span>Бокс</span></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="team" id="team">
-        <div class="container">
-            <div class="title">
-                <p>Наша команда</p>
+
+
+        <section class="types" id="types">
+            <div class="container">
+                <div class="types__title">
+                    <p class="title">Направления</p>
+                </div>
+
+                <div class="types__cards">
+                    <div class="card">
+                        <img class="card__img" src="./image/_.jpeg" alt="Fitness">
+                        <h3 class="card__title">Фитнес</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="./image/_ (1).jpeg" alt="Pilates">
+                        <h3 class="card__title">Пилатес</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="./image/chibi-oneechan - Digital Artist _ DeviantArt.jpeg" alt="Traible">
+                        <h3 class="card__title">Трайбл фьюжн</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="./image/pirate.jpeg" alt="Heels">
+                        <h3 class="card__title">Heels</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="./image/_ (7).jpeg" alt="Yoga">
+                        <h3 class="card__title">Йога</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="./image/_ (6).jpeg" alt="Box">
+                        <h3 class="card__title">Бокс</h3>
+                    </div>
+                </div>
             </div>
-            <div class="slider" id="team_slider">
-                <div class="team_row">
-                    <div class="team_card">
-                        <div class="team_photo">
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <div class="team__title">
+                    <h3 class="title">Наша команда</h3>
+                </div>
+                <div class="slider" id="team_slider">
+                    <div class="team__container">
+                        <div class="team__card">
                             <img src="image/_ (8).jpeg">
+                            <h3 class="couch">Гаглоева Анна </he>
+                            <h3 class="direction">Фитнес</h3>
                         </div>
-                        <div class="team_type">
-                            <span class="couch">Гаглоева Анна </span>
-                            <span class="direction">Фитнес</span>
-                        </div>
-                    </div>
-                    <div class="team_card">
-                        <div class="team_photo">
+                        <div class="team__card">
                             <img src="image/girl stretch dance arms open.jpeg">
+                            <h3 class="couch">Лела</h3>
+                            <h3 class="direction">Бокс</h3>
                         </div>
-                        <div class="team_type">
-                            <span class="couch">Лела</span>
-                            <span class="direction">Бокс</span>
-                        </div>
-                    </div>
-                    <div class="team_card">
-                        <div class="team_photo">
+                        <div class="team__card">
                             <img src="image/Органические плоские люди медитируют иллюстрация _ Бесплатно векторы.jpeg">
+                            <h3 class="couch">Зарина</h3>
+                            <h3 class="direction">Фитнес</h3>
                         </div>
-                        <div class="team_type">
-                            <span class="couch">Зарина</span>
-                            <span class="direction">Фитнес</span>
-                        </div>
-                    </div>
-                    <div class="team_card">
-                        <div class="team_photo">
+                        <div class="team__card">
                             <img src="image/Yoga Illustration I - Digital Paintin.jpeg">
+                            <h3 class="couch">Лана</h3>
+                            <h3 class="direction">Трайбл фьюжн</h3>
                         </div>
-                        <div class="team_type">
-                            <span class="couch">Лана</span>
-                            <span class="direction">Трайбл фьюжн</span>
-                        </div>
-                    </div>
-                    <div class="team_card">
-                        <div class="team_photo">
+                        <div class="team__card">
                             <img src="image/_ (7).jpeg">
+                            <h3 class="couch">Лана</h3>
+                            <h3 class="direction">Йога</h3>
                         </div>
-                        <div class="team_type">
-                            <span class="couch">Лана</span>
-                            <span class="direction">Йога</span>
+                        <div class="team__card">
+                            <img src="image/Mad Line - Illustratrice slow life.jpeg">
+                            <h3 class="couch">Элла</h3>
+                            <h3 class="direction">Силовая</h3>
                         </div>
-                    </div>
-                    <div class="team_card">
-                        <div class="team_photo">
-                            <img src="">
+                        <div class="team__card">
+                            <img src="image/_ (1).jpeg">
+                            <h3 class="couch">Карина</h3>
+                            <h3 class="direction">Функционал</h3>
                         </div>
-                        <div class="team_type">
-                            <span class="couch">Элла</span>
-                            <span class="direction">Силовая</span>
-                        </div>
-                    </div>
-                    <div class="team_card">
-                        <div class="team_photo">
-                            <img src="">
-                        </div>
-                        <div class="team_type">
-                            <span class="couch">Карина</span>
-                            <span class="direction">Функционал</span>
-                        </div>
-                    </div>
-                    <div class="team_card">
-                        <div class="team_photo">
-                            <img src="">
-                        </div>
-                        <div class="team_type">
-                            <span class="couch">Альбина</span>
-                            <span class="direction">Пилатес</span>
-                        </div>
-                    </div>
-                    <div class="team_card">
-                        <div class="team_photo">
-                            <img src="">
-                        </div>
-                        <div class="team_type">
-                            <span class="couch">Ф.И. тренера</span>
-                            <span class="direction">Фитнес</span>
+                        <div class="team__card">
+                            <img src="image/_ (14).jpeg">
+                            <h3 class="couch">Альбина</h3>
+                            <h3 class="direction">Пилатес</h3>
                         </div>
                     </div>
                 </div>
+                <div class="arrows">
+                    <a class="prev" onclick="minusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
-            <div class="arrows">
-                <a class="prev" onclick="minusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="timetable" id="timetable">
-        <div class="container">
-            <div class="title">Расписание</div>
-            <div class="timetable_container">
-                <div class="slogan">
-                    <span>GOOD VIBES ONLY</span>
-                </div>
-                <div class="timetable_list">
-                    <div class="timetable_list_left">
-                        <span class="day">Пн-Ср-Пт</span>
-                        <span class="time">9:00-10:00  Трайбл фьюжн/Лана</span>
-                        <span class="time">13:00-14:00  Фитнес/Анна</span>
-                        <span class="time">16:30-17:30  Пилатес/Альбина</span>
-                        <span class="time">17:30-18:30  Фитнес/Зарина</span>
-                        <span class="time">18:30-19:30  Фитнес/Анна</span>
-                        <span class="time">20:40-21:40  Стретчинг/Зарина</span>
+        <section class="timetable" id="timetable">
+            <div class="container">
+                <h3 class="title">Расписание</h3>
+                <div class="timetable__container">
+                    <div class="slogan">
+                        <span>GOOD VIBES ONLY</span>
                     </div>
-                    <div class="timetable_list_right">
-                        <span class="day">Вт-Чт-Сб</span>
-                        <span class="time">10:00-11:00  Пилатес/Альбина</span>
-                        <span class="time">13:00-14:00  Heels/Марина</span>
-                        <span class="time">16:00-17:00  Силовая/Лера</span>
-                        <span class="time">17:30-18:30  Силовая/Элла</span>
-                        <span class="time">18:30-19:30  Функционал/Карина</span>
-                        <span class="time">19:30-20:30  Бокс/Лела</span>
-                        <span class="time">20:40-21:40  Пилатес/Альбина</span>
+                    <div class="timetable__list">
+                        <div class="timetable__list__left">
+                            <span class="day">Пн-Ср-Пт</span>
+                            <span class="time">9:00-10:00  Трайбл фьюжн/Лана</span>
+                            <span class="time">13:00-14:00  Фитнес/Анна</span>
+                            <span class="time">16:30-17:30  Пилатес/Альбина</span>
+                            <span class="time">17:30-18:30  Фитнес/Зарина</span>
+                            <span class="time">18:30-19:30  Фитнес/Анна</span>
+                            <span class="time">20:40-21:40  Стретчинг/Зарина</span>
+                        </div>
+                        <div class="timetable__list__right">
+                            <span class="day">Вт-Чт-Сб</span>
+                            <span class="time">10:00-11:00  Пилатес/Альбина</span>
+                            <span class="time">13:00-14:00  Heels/Марина</span>
+                            <span class="time">16:00-17:00  Силовая/Лера</span>
+                            <span class="time">17:30-18:30  Силовая/Элла</span>
+                            <span class="time">18:30-19:30  Функционал/Карина</span>
+                            <span class="time">19:30-20:30  Бокс/Лела</span>
+                            <span class="time">20:40-21:40  Пилатес/Альбина</span>
+                        </div>
                     </div>
+                    
                 </div>
-                
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cost" id="cost">
-        <div class="container">
-            <div class="title">Стоимость</div>
-                <div class="main_container">
-                    <div class="cost_container">
-                        <p class="cost_title">Абонемент на месяц</p>
-                        <div class="cost_1">
-                            <span class="cost_head">С 9:00 по 16:00</span>
-                            <span class="cost_size">2300 р</span>
+        <section class="cost" id="cost">
+            <div class="container">
+                <h3 class="title">Стоимость</h3>
+                <div class="wrapper">
+                    <div class="cost__container">
+                        <div class="cost__month">
+                            <span class="cost__title">Абонемент на месяц</span>
+                            <div class="cost__1">
+                                <p class="cost__head">С 9:00 по 16:00</p>
+                                <p class="cost__size">2300 р</p>
+                            </div>
+                            <div class="cost__2">
+                                <p class="cost__head">С 16:00 по 20:40</p>
+                                <p class="cost__size">2500 р</p>
+                            </div>
                         </div>
-                        <div class="cost_2">
-                            <span class="cost_head">С 16:00 по 20:40</span>
-                            <span class="cost_size">2500 р</span>
-                        </div>
-                        <div class="cost_3">
-                            <span class="cost_head">Разовое посещение</span>
-                            <span class="cost_size">350 р</span>
-                        </div>
+                        <div class="cost__day">
+                            <div class="cost__3">
+                                <p class="cost__head">Разовое посещение</p>
+                                <p class="cost__size">350 р</p>
+                            </div>
+                        </div>                        
                     </div>
-                <div class="form_block">
-                    <form id="tg" class="form">
-                        <div class="form_title">Присоединяйтесь к нам, чтобы сделать шаг к телу своей мечты</div>
-                        <div class="form_item">
-                            <!-- <label class="form_label">Имя</label> -->
-                            <input type="text" id="name" class="form_input" placeholder="Имя">
-                        </div>
-                        <div class="form_item">
-                            <!-- <label class="form_label">Имя</label> -->
-                            <input type="text" id="type" class="form_input" placeholder="Направление">
-                        </div>
-                        <div class="form_item ">
-                            <!-- <label class="form_label">Введите номер телефона</label> -->
-                            <input type="text" id="phone" class="form_input" placeholder="Введите номер телефона">
-                        </div>
-                        <button type="button"  id="tg_btn" class="btn">Записаться</button>
-                        <div class="alert primary" id="alert" style="display: none;">
-                            <!-- Ваша заявка отправлена! С вами свяжутся! -->
-                            <!-- <span class="close" onclick="parentElement.style.display='none'">x</span> -->
-                        </div>
-                    </form>
+                    <div class="form__block">
+                        <form id="tg" class="form">
+                            <p class="form__title">Присоединяйтесь к нам, чтобы сделать шаг </br>к телу своей мечты</p>
+                            <div class="form__item">
+                                <!-- <label class="form_label">Имя</label> -->
+                                <input type="text" id="name" class="form__input" placeholder="Имя">
+                            </div>
+                            <div class="form__item">
+                                <!-- <label class="form_label">Имя</label> -->
+                                <input type="text" id="type" class="form__input" placeholder="Направление">
+                            </div>
+                            <div class="form__item ">
+                                <!-- <label class="form_label">Введите номер телефона</label> -->
+                                <input type="text" id="phone" class="form__input" placeholder="Введите номер телефона">
+                            </div>
+                            <button type="button"  id="tg_btn" class="btn">Записаться</button>
+                            <div class="alert primary" id="alert" style="display: none;">
+                                <!-- Ваша заявка отправлена! С вами свяжутся! -->
+                                <!-- <span class="close" onclick="parentElement.style.display='none'">x</span> -->
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-                
-        </div>
-    </section>
+        </section>
 
-    <section class="contacts" id="contacts">
-        <div class="container">
-            <div class="contact_container">
-                <div class="contact_title">PIONEER</div>
-                <div class="contact">
-                    <div class="address">
-                        <span class="con_title">Адрес</span>
-                        <p>г.Цхинвал, ул.Советская, 2а</p>
-                    </div>
-                    <div class="schedule">
-                        <span class="con_title">График работы</span>
-                        <p>Пн-сб 9:00-21:40</p>
-                    </div>
-                    <div class="contacts_block">
-                        <span class="con_title">Контакты</span>
-                        <p>+7-929-808-99-57</p>
-                        <div class="social">
-                            <img src="image/3225191_app_instagram_logo_media_popular_icon.png" alt="Instagram icon">
-                            <a class="link" href="https://www.instagram.com/pioneer_fitness_tsh" target="_blank">pioneer_fitness_tsh</a>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contact__container">
+                    <div class="contact__title">PIONEER</div>
+                    <div class="contact">
+                        <div class="address">
+                            <p class="con__title"><i class="fa-solid fa-location-dot"></i>Адрес</p>
+                            <p>г.Цхинвал, ул.Советская, 2а</p>
+                        </div>
+                        <div class="schedule">
+                            <i class="fa-solid fa-clock"></i>
+                            <span class="con__title">График работы</span>
+                            <p>Пн-сб 9:00-21:40</p>
+                        </div>
+                        <div class="contacts__block">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <span class="con__title">Телефон</span>
+                            <a href="tel:+79298089957">+7-929-808-99-57</a>
+                            <div class="social">
+                                <!-- <img src="image/3225191_app_instagram_logo_media_popular_icon.png" alt="Instagram icon"> -->
+                                <a class="link" href="https://www.instagram.com/pioneer_fitness_tsh" target="_blank">pioneer_fitness_tsh</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-            <div class="waves">
+            <!-- <div class="waves">
                 <div class="wave" id="wave1"></div>
                 <div class="wave" id="wave2"></div>
                 <div class="wave" id="wave3"></div>
                 <div class="wave" id="wave4"></div>
-            </div>
+            </div> -->
             <ul class="menu">
                 <li><a href="#types">Направления</a></li>
                 <li><a href="#team">Команда</a></li>
@@ -287,6 +307,7 @@
         
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
