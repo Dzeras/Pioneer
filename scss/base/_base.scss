@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
 
 
-
 body {
     font-family: $font-main;
     background-color: $color-bg;
@@ -33,3 +32,7 @@ a {
     font-weight: 700;
     padding-bottom: 20px;
 }
+
+.no-scroll {
+    overflow-y: hidden;
+} 

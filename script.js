@@ -1,3 +1,5 @@
+/* =========Slider============= */
+
 var slideIndex = 1;
 
 var current_position = 0;
@@ -41,9 +43,6 @@ function minusSlides(n) {
 
 }
 
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// }
 
 function showSlides(n) {
     var i;
@@ -56,7 +55,9 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
 }
 
+/* =========Slider============= */
 
+/* ===========Form============= */
 
 document.addEventListener("DOMContentLoaded", function(event) {
     const TOKEN = '6664897908:AAFVP_fsMB7tIYF9-9gk2Z40Cs-qMr1eC0Y';
@@ -98,5 +99,96 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
 });
 
+/* ===========Form============= */
 
 
+/* ===========Mobile Nav============= */
+
+const navBtn = document.querySelector('.nav-icon-btn');
+
+const navIcon = document.querySelector('.nav-icon');
+
+const nav = document.querySelector('.header__top-row');
+
+navBtn.onclick = function () {
+    navIcon.classList.toggle('nav-icon__active');
+    nav.classList.toggle("header__top-row--mobile");
+    document.body.classList.toggle('no-scroll');
+}
+
+
+
+/* ===========Mobile Nav============= */
+
+/* ==========Slider2========*/
+
+const initSlider = () => {
+    const imageList = document.querySelector(".image-list");
+    const sliderButtons = document.querySelectorAll(".slider-button");
+    const sliderScrollbar = document.querySelector(".slider-scrollbar");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+
+    // Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+
+            // Ensure the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageList.scrollLeft = scrollPosition;
+        }
+
+
+        // Remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+        }
+
+        //Add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+
+    //Slide images according to the slide button clicks
+    sliderButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            console.log(button);
+            const directon = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * directon;
+            imageList.scrollBy({ left: scrollAmount, behavior: "smooth"});
+        });
+    });
+
+    // Show or hide slide buttons based on scroll position
+    const handleSlideButtons = () => {
+        sliderButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+        sliderButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+    }
+
+    //Update scrollbar thumb position based on image scroll
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    }
+
+    // Call these two functions when image list scrolls
+    imageList.addEventListener("scroll", () => {
+        updateScrollThumbPosition();
+        handleSlideButtons();
+    });
+}
+
+window.addEventListener("resize", initSlider);
+window.addEventListener("load", initSlider);

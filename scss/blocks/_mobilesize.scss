@@ -1,5 +1,16 @@
-@media screen and (max-width: 768px) {
-     .header-row {
+@media screen and (max-width: 900px) {
+    .container {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .header {
+        min-height: unset;
+        row-gap: 50px;
+    }
+
+    .header-row {
         display: grid;
     }
     
@@ -8,18 +19,34 @@
         flex-basis: 100%;
     }
 
-    .benefits__row {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        justify-items: center;
-    }
-
-    .container {
-        overflow: hidden;
+    .benefits__item {
         display: flex;
     }
 
+    .benefits__row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        justify-items: center;
+        column-gap: 0;
+    }
+
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav-btn {
+        display: block;
+        position: fixed;
+        right: 5%;
+        // left: 90%;
+    }
+
+   
+
     .types__cards {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         margin-left: 5px;
@@ -49,24 +76,15 @@
     .wrapper {
         gap: 20px;
     }
+
+
+    .benefits__item-img {
+
+    }
 }
 
 
 @media screen and (max-width: $tablet) {
-    .container {
-        display: block;
-    }
 
-    .header {
-        min-height: unset;
-        row-gap: 50px;
-    }
 
-    .header__nav {
-        display: none;
-    }
-
-    .header__nav-btn {
-        display: block;
-    }
 }
