@@ -5,7 +5,7 @@ body {
     font-family: $font-main;
     background-color: $color-bg;
     color: $text-color;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 a {
@@ -22,11 +22,11 @@ a {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 1140px;
+    max-width: 1400px;
 }
 
 .title {
-    font-size: 25px;
+    font-size: 30px;
     font-family: $font-accent;
     color: $color-accent;
     font-weight: 700;

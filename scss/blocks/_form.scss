@@ -5,7 +5,7 @@
     font-family: $font-accent;
     color: #700083;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 20px;
 }
 
@@ -15,11 +15,11 @@
     border-radius:10px;
     padding: 10px;
     margin-bottom: 20px;
-    height: 40px;
+    height: 45px;
     width: 300px;
     color: $color-accent;
     outline: none;
-
+    font-size: 18px;
 }
 
 
@@ -28,8 +28,7 @@
     align-items: center;
     border: 1px solid #700083;
     border-radius: 50px;
-    height: 40px;
-    font-size: 15px;
+    height: 45px;
     font-weight: 600;
     box-shadow: 4px 4px 8px 5px rgba(112, 0, 131, 0.2);
     transition: box-shadow 0.2s;
@@ -37,4 +36,5 @@
     color: $color-bg;
     cursor: pointer;
     font-family: $font-main;
+    font-size: 20px;
 }

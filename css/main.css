@@ -24,7 +24,7 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #F7EEEE;
   color: #000000;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 a {
@@ -39,11 +39,11 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1140px;
+  max-width: 1400px;
 }
 
 .title {
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
   color: #700083;
   font-weight: 700;
@@ -139,7 +139,7 @@ a:hover {
 }
 
 .nav {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .nav__list {
@@ -148,23 +148,6 @@ a:hover {
        column-gap: 40px;
   list-style: none;
   transition: 0.3s ease;
-}
-
-.nav-icon-btn {
-  --time: 0.1s;
-  --width: 40px;
-  --height: 30px;
-  height: var(--height);
-  width: var(--width);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-icon {
-  position: relative;
-  width: var(--width);
-  height: var(--height);
 }
 
 .benefits {
@@ -396,6 +379,23 @@ a:hover {
     height: 380px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .slider_container {
+    width: 88%;
+  }
+  .first-slider-wrapper .slider_button {
+    display: none !important;
+  }
+  .first-slider-wrapper .first-image-list {
+    gap: 50px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  .first-slider-wrapper .first-image-list .image_item {
+    width: 200px;
+    height: 300px;
+  }
+}
 .cost {
   padding: 100px 0;
   padding-bottom: 30px;
@@ -415,7 +415,6 @@ a:hover {
   background-color: rgba(112, 0, 131, 0.5);
   border-radius: 20px;
   color: #F7EEEE;
-  font-size: 16px;
 }
 
 .cost__title {
@@ -443,7 +442,7 @@ a:hover {
   font-family: "Playfair Display", serif;
   color: #700083;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
   padding-bottom: 20px;
 }
 
@@ -453,10 +452,11 @@ a:hover {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
-  height: 40px;
+  height: 45px;
   width: 300px;
   color: #700083;
   outline: none;
+  font-size: 18px;
 }
 
 .btn {
@@ -464,8 +464,7 @@ a:hover {
   align-items: center;
   border: 1px solid #700083;
   border-radius: 50px;
-  height: 40px;
-  font-size: 15px;
+  height: 45px;
   font-weight: 600;
   box-shadow: 4px 4px 8px 5px rgba(112, 0, 131, 0.2);
   transition: box-shadow 0.2s;
@@ -473,6 +472,7 @@ a:hover {
   color: #F7EEEE;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
+  font-size: 20px;
 }
 
 .timetable__container {
@@ -504,7 +504,6 @@ a:hover {
 .time {
   display: flex;
   line-height: normal;
-  font-size: 16px;
   padding-bottom: 10px;
   padding-left: 15px;
 }
@@ -623,6 +622,40 @@ a:hover {
     gap: 20px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .header__image {
+    display: none;
+  }
+  .header-row {
+    margin-bottom: 100px;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .form__title {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 17px;
+  }
+  .form__input {
+    font-size: 17px;
+  }
+  .timetable__list {
+    display: grid;
+    width: 350px;
+  }
+  .slogan {
+    display: none;
+  }
+  .footer .menu {
+    display: none;
+  }
+}
 .container2 {
   min-height: 70vh;
   width: 95%;
@@ -737,5 +770,22 @@ a:hover {
   .slider-wrapper .image-list .image-item {
     width: 280px;
     height: 380px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container2 {
+    width: 88%;
+  }
+  .slider-wrapper .slider-button {
+    display: none !important;
+  }
+  .slider-wrapper .image-list {
+    gap: 50px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 200px;
+    height: 300px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,1 +1,1 @@
-scp -r /home/dzerassa/apps/Pioneer/image debian@socfond.org:/var/www/pioneer-fitness.ru/public_html/image
+scp -r /home/dzerassa/apps/Pioneer/Pioneer/image debian@socfond.org:/var/www/pioneer-fitness.ru/image

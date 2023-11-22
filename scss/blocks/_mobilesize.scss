@@ -84,7 +84,49 @@
 }
 
 
-@media screen and (max-width: $tablet) {
+@media only screen and (max-width: 576px){
+    .header__image {
+        display: none;
+    }
 
+    .header-row {
+        margin-bottom: 100px;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
+    .title {
+        font-size: 22px;
+    }
+
+    .form__title {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 17px;
+    }
+
+    .form__input {
+        font-size: 17px;
+    }
+
+    .timetable__list {
+        display: grid;
+        width: 350px;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .footer {
+        .menu {
+            display: none;
+
+        }
+    }
 }

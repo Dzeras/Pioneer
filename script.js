@@ -107,6 +107,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 const navBtn = document.querySelector('.nav-icon-btn');
 
 const navIcon = document.querySelector('.nav-icon');
+const navList = document.querySelector('.nav__list');
+const navItem = document.querySelectorAll('.nav__item')
 
 const nav = document.querySelector('.header__top-row');
 
@@ -114,6 +116,10 @@ navBtn.onclick = function () {
     navIcon.classList.toggle('nav-icon__active');
     nav.classList.toggle("header__top-row--mobile");
     document.body.classList.toggle('no-scroll');
+}
+
+navItem.onclick = function () {
+    nav.classList.toggle("header__top-row--mobile", false);
 }
 
 

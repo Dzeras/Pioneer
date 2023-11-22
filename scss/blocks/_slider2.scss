@@ -137,3 +137,26 @@
     }
 }
 
+
+@media only screen and (max-width: 576px){
+    .container2 {
+        width: 88%;
+    }
+
+    .slider-wrapper {
+        .slider-button {
+            display: none !important;
+        }
+
+        .image-list {
+            gap: 50px;
+            margin-bottom: 15px;
+            scroll-snap-type: x mandatory;
+
+            .image-item {
+                width: 200px;
+                height: 300px;
+            }
+        }
+    }
+}
